@@ -8096,3 +8096,52 @@ i {
     font-size: 20px;
     padding-left: 10px;
 }
+/* تخصيص الأزرار العائمة على اليسار */
+.floating-btn {
+  position: fixed;
+  left: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+}
+
+/* تحديد المسافة بين الأزرار */
+.whatsapp-btn {
+  bottom: 120px;
+}
+
+.call-btn {
+  bottom: 50px; /* المسافة من أسفل الصفحة */
+  padding-top: 10px; /* المسافة من أسفل الصفحة */
+
+}
+
+/* تأثير التمرير على الأزرار */
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+/* تخصيص الأيقونات داخل الأزرار */
+.floating-btn i {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* تخصيص الأزرار عندما تكون على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .floating-btn {
+      width: 50px;
+      height: 50px;
+  }
+
+  .floating-btn i {
+      font-size: 20px;
+  }
+}
