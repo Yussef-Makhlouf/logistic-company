@@ -1,0 +1,19 @@
+# Algabbary Logistics Website Robots.txt
+User-agent: *
+Allow: /
+Allow: /img/
+Allow: /css/
+Allow: /js/
+Allow: /lib/
+
+# Sitemap
+Sitemap: https://algabbary.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Specific directories to disallow
+Disallow: /mail/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
